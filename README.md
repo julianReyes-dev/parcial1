@@ -16,8 +16,29 @@ El archivo recap.csv se ecuentra en shared-volume
    cd parcial1¹
    ```
 
-3. **Levanta los servicios con Docker Compose:**
+2. **Levanta los servicios con Docker Compose:**  
    
    ```
-   docker-compose up --build
+   docker-compose --env-file .env up --build -d
+   ```
+3. **Levanta los servicios con Docker Compose:**  
+
+   Ingresar a
+   ```
+   http://localhost:7474
+   ```
+   Deja todo igual y solo introduce la siguiente contraseña:
+   ```
+   julian.reyes04
+   ```
+
+4. **Prueba la API**  
+
+   Opción 1: Ingresa a la url, espera unos segundos y revisa la carpeta shared-volume que tendrá el .csv generado. El json aparecerá en el navegador
+   ```
+   http://localhost:3000/api/extract
+   ```
+   Opción 2: Haz el curl 
+   ```
+   curl http://localhost:3000/api/extract
    ```

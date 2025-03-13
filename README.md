@@ -7,3 +7,17 @@ El archivo recap.csv se ecuentra en shared-volume
 ## Pasos para Ejecutar el Proyecto
 
 
+1. **Clona el repositorio:**
+
+   ```
+   git clone https://github.com/julianReyes-dev/parcial1.git
+   ```
+   ```
+   cd parcial1¹
+   ```
+
+3. **Levanta los servicios con Docker Compose:**
+   
+   ```
+   docker-compose up --build
+   ```

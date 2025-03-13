@@ -42,3 +42,11 @@ El archivo recap.csv se ecuentra en shared-volume
    ```
    curl http://localhost:3000/api/extract
    ```
+5. **Ver postgress**  
+
+   ```
+   docker exec -it postgres psql -U admin -d etl_db
+   ```
+   ```
+   SELECT * FROM etl_data;
+   ```

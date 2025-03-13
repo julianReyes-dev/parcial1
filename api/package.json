@@ -1,0 +1,13 @@
+{
+  "name": "etl-api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "neo4j-driver": "^5.12.0",
+    "pg": "^8.11.3",
+    "csv-writer": "^1.6.0"
+  }
+}
